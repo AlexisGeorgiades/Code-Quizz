@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Code Quiz</title>
+    </head>
+
+    <body>
+         <!---Header with timer and high score link-->
+
+        <header>
+            <div id="header">
+                <a id= "score" href="highscore.html">YOUR SCORE</a> 
+                <h2 id="timer"></h2>
+            </div>
+        </header>
+         
+            <!---Intro-->
+
+        <main class="container">
+            <div class="row" id= "intro">
+                <h2 class="start">Coding Quiz Challenge</h2>
+                <p id="rules">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                <button class="btnStart" id="startBtn" type="submit">Start Quiz!</button>
+            </div>
+
+            <!---Questions-->
+
+            <div id= "quiz">
+                <div id= "question"></div>
+                    <div id= "choices">
+                        <ul>
+                            <li><button type="button" class="choice option-1 choice-button" id="1" onclick="checkAnswer('1')"></button></li>
+                            <li><button type="button" class="choice option-2 choice-button" id="2" onclick="checkAnswer('2')"></button></li>
+                            <li><button type="button" class="choice option-3 choice-button" id="3" onclick="checkAnswer('3')"></button></li>
+                            <li><button type="button" class="choice option-4 choice-button" id="4" onclick="checkAnswer('4')"></button></li>
+                        </ul>
+                    </div>
+                 <!---Answer--->
+
+                <div id="answerOutput"> </div>
+            </div>
+
+             <!---Results-->
+
+            <div id="finalScore">
+                <h2 id="endMessage">All done!</h2>
+                <div id="result"></div>
+
+
+                 <!---Enter your initials-->
+                 
+                 <form >
+                    <div id="initials">
+                        <label for="users" id="name">Enter Initials:</label>
+                        <input type="text" id="contactInfo">
+                        <input type="button" id= "userInfo" class="submitBtn" onclick="location.href='highscore.html';" value="Submit" />
+                    </div>
+                </form>
+            </div>
+        </main> 
+
+        <script src="script.js"></script>
+    </body>
+</html>
+

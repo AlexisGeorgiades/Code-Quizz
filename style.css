@@ -1,0 +1,274 @@
+:root {
+    --primary-color: blue;
+    --secondary-color: purple (183, 160, 221);
+    --tertiary-color: white;
+  }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Style */
+
+#header {
+    margin-top: 20px;
+}
+
+#score {
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-left: 25px;
+}
+
+#timer {
+    text-align: right;
+    margin-top: -20px;
+    margin-right: 40px;
+    font-size: medium;
+}
+
+/* Quiz Intro*/
+
+.start {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20pt;
+}
+
+#rules {
+    font-size: 19px;
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1%;
+    text-align: justify;
+}
+
+.btnStart {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 25px;
+    width: 115px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 44.5%;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    font-size: medium;
+    outline: none;
+}
+
+.btnStart:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Quiz Content */
+
+#quiz {
+    margin: 100px;
+    margin-left: 40%;
+}
+
+#question {
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 28%; 
+}
+
+ul {
+    list-style: none;
+}
+
+.choice-button {
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    height: 30px;
+    background-color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    color: white;
+    font-size: small;
+    text-align: left;
+    outline: none;
+}
+
+.choice-button:hover {
+    background-color: var(--secondary-color);
+} 
+
+#answerOutput {
+    padding-top: 20px;
+    font-style: italic;
+    color: gray;
+    font-size: larger;
+}
+
+/* Score*/
+
+#name {
+    margin-left: 40%;
+    padding-top: 10px;
+}
+
+#userInfo {
+    background-color: var(--primary-color);
+    width: 60px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    color: var(--tertiary-color);
+    font-size: 12px;
+    outline: none;
+}
+
+#userInfo:hover {
+    background-color: var(--secondary-color);
+}
+
+#result {
+    margin-left: 40%;
+    padding-bottom: 3px;
+    padding-bottom: 10px;
+}
+
+#endMessage {
+    margin-top: 15%;
+    font-weight: bold;
+    font-size: x-large;
+    padding-bottom: 10px;
+    margin-left: 40%;
+}
+
+
+
+/* High Scores*/
+
+#highScore {
+    margin-top: 15%;;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#clear {
+    width: 110px;
+    margin-left: 45.75%;
+}
+
+#clear:hover {
+    background-color: var(--secondary-color);
+}
+
+#clear, #goBack {
+    background-color: var(--primary-color);
+    height: 20px;
+    color: var(--tertiary-color);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#goBack {
+    width: 70px;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+
+#goBack:hover {
+    background-color: var(--secondary-color);
+}
+
+/*Media Screen*/
+
+@media screen and (max-width: 1024px) { 
+   
+    #rules {
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: justify;
+        word-spacing:-2px;
+    } 
+   
+    #clear {
+        margin-left: 44.5%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 980px) {
+    #rules {
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: justify;
+        word-spacing:-2px;
+    } 
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    #rules {
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 14pt;
+        text-align: justify;
+        word-spacing:-2px;
+    }  
+
+    .btnStart {
+        margin-left: 42%;
+    }
+   
+    #clear {
+        margin-left: 43%;
+    }
+
+}
+
+
+@media screen and (max-width: 575px) {
+   
+    #rules {
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 14pt;
+        text-align: justify;
+        word-spacing:-2px;
+    }  
+
+    .btnStart {
+        margin-left: 39.5%;
+    }
+   
+    #clear {
+        margin-left: 40.5%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #rules {
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 13pt;
+        text-align: justify;
+        word-spacing:-2px;
+    }  
+
+    .btnStart {
+        margin-left: 35%;
+    }
+
+    #question, .choices {
+        font-size: 14pt;
+        margin-left: -6%;
+    }
+}
